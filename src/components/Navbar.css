@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.8rem 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.brand-name {
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ocean-deep);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: var(--ocean-blue);
+}
+
+.btn-nav {
+  background: var(--ocean-blue);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.btn-nav:hover {
+  background: var(--ocean-deep);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Mobile menu can be added later */
+  }
+  
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+}

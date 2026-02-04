@@ -1,0 +1,65 @@
+.admin-dashboard {
+  padding-top: 100px;
+  padding-bottom: var(--spacing-xl);
+}
+
+.admin-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ocean-blue);
+  font-family: var(--font-accent);
+}
+
+.bookings-table-wrapper {
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-md);
+}
+
+.admin-table th, .admin-table td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.status-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.btn-small {
+  background: var(--ocean-light);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}

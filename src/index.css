@@ -1,0 +1,110 @@
+:root {
+  /* Coastal Palette */
+  --ocean-deep: #003366;
+  --ocean-blue: #005a9c;
+  --ocean-light: #007bb5;
+  --sea-foam: #e0f2f1;
+  --sand: #f4e1d2;
+  --sand-light: #faf3ee;
+  --crisp-white: #ffffff;
+  --text-dark: #2c3e50;
+  --text-grey: #5d6d7e;
+
+  /* Fonts */
+  --font-primary: "Inter", system-ui, -apple-system, sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  /* Spacing & Misc */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-soft: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background-color: var(--crisp-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-accent);
+  color: var(--ocean-deep);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-primary);
+  transition: var(--transition-smooth);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.btn-primary {
+  background: var(--ocean-blue);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-soft);
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--ocean-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.15);
+}
+
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-xl: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}

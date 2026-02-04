@@ -1,0 +1,67 @@
+.eco {
+  background-color: var(--crisp-white);
+}
+
+.eco-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.eco-image {
+  flex: 1;
+}
+
+.eco-image img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: var(--shadow-soft);
+}
+
+.eco-text {
+  flex: 1;
+}
+
+.highlight-blue {
+  color: var(--ocean-blue);
+}
+
+.eco-description {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-grey);
+}
+
+.eco-features {
+  list-style: none;
+  margin-bottom: var(--spacing-lg);
+}
+
+.eco-features li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.eco-mission {
+  padding: 1.5rem;
+  background: var(--sea-foam);
+  border-left: 5px solid var(--ocean-light);
+  border-radius: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .eco-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .eco-features li {
+    justify-content: center;
+  }
+}
